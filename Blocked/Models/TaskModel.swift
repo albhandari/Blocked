@@ -8,10 +8,19 @@
 import Foundation
 
 
-struct Task{
+struct Task: Identifiable, Codable{
     
-    let TaskName: String
-    let BlockType: String
-    let TimesPerWeek: Int
+    let id: UUID
+    let title: String
+    let type: String
+    let description: String
+    let duration: DurationRange
+    let depends_on: [String]
     
+}
+
+struct DurationRange: Codable{
+    
+    let min: Int
+    let max: Int
 }
