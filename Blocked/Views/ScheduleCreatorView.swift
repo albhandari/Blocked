@@ -15,10 +15,10 @@ struct ScheduleCreatorView: View {
         
         Text("Paste Your JSON Format Schedule Here")
         TextEditor(text: $jsonSchedule)
-            .frame(minHeight: 500, maxHeight: 500)   // <- set your fixed height
-            .scrollContentBackground(.hidden)        // iOS 16+ (optional, nicer)
+            .frame(minHeight: 500, maxHeight: 500)
+            .scrollContentBackground(.hidden)
             .padding(8)
-            .background(.thinMaterial)               // or Color(.secondarySystemBackground)
+            .background(.thinMaterial)
             .clipShape(RoundedRectangle(cornerRadius: 12))
             .overlay(
                 RoundedRectangle(cornerRadius: 12)
