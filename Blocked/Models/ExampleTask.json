@@ -1,0 +1,68 @@
+[
+  {
+    "id": "A1E8B6A4-3B8E-4F1A-9D0E-001A1C001001",
+    "title": "Play Guitar",
+    "type": "regulation",
+    "description": "Regulate nervous system and enter presence",
+    "duration": {
+      "min": 15,
+      "max": 30
+    },
+    "depends_on": []
+  },
+  {
+    "id": "A1E8B6A4-3B8E-4F1A-9D0E-001A1C001002",
+    "title": "Walk Outside",
+    "type": "presence",
+    "description": "Anchor attention in the environment",
+    "duration": {
+      "min": 10,
+      "max": 30
+    },
+    "depends_on": []
+  },
+  {
+    "id": "A1E8B6A4-3B8E-4F1A-9D0E-001A1C001003",
+    "title": "Coding Buffer",
+    "type": "focus",
+    "description": "Enter coding without pressure after regulation",
+    "duration": {
+      "min": 10,
+      "max": 30
+    },
+    "depends_on": ["Play Guitar"]
+  },
+  {
+    "id": "A1E8B6A4-3B8E-4F1A-9D0E-001A1C001004",
+    "title": "Spanish Practice",
+    "type": "focus",
+    "description": "Maintain language direction without urgency",
+    "duration": {
+      "min": 5,
+      "max": 10
+    },
+    "depends_on": ["Play Guitar"]
+  },
+  {
+    "id": "A1E8B6A4-3B8E-4F1A-9D0E-001A1C001005",
+    "title": "Job Search",
+    "type": "responsibility",
+    "description": "Handle job-related tasks without urgency",
+    "duration": {
+      "min": 30,
+      "max": 60
+    },
+    "depends_on": ["Play Guitar"]
+  },
+  {
+    "id": "A1E8B6A4-3B8E-4F1A-9D0E-001A1C001006",
+    "title": "Europe Planning",
+    "type": "responsibility",
+    "description": "Explore Europe plans in a contained way",
+    "duration": {
+      "min": 30,
+      "max": 60
+    },
+    "depends_on": ["Play Guitar"]
+  }
+]
