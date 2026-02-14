@@ -9,12 +9,12 @@ import SwiftUI
 
 struct ScheduleCreatorView: View {
     
-    @State var jsonSchedule: String = ""
+    @State var scheduleVM = ScheduleVM()
     
     var body: some View {
         
         Text("Paste Your JSON Format Schedule Here")
-        TextEditor(text: $jsonSchedule)
+        TextEditor(text: $scheduleVM.jsonString)
             .frame(minHeight: 500, maxHeight: 500)
             .scrollContentBackground(.hidden)
             .padding(8)
