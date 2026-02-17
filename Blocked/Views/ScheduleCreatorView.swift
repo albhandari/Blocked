@@ -25,7 +25,7 @@ struct ScheduleCreatorView: View {
                     .stroke(.quaternary)
             )
         Button("Create Schedule") {
-            
+            scheduleVM.JSONtoScheduleObj()
         }
         
         Spacer()
