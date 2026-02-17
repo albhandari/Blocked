@@ -1,0 +1,39 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# --- Xcode user settings ---
+xcuserdata/
+*.xcuserstate
+
+# --- Xcode SCM / workspace noise ---
+*.xccheckout
+*.xcscmblueprint
+
+# --- Build output ---
+build/
+DerivedData/
+
+# --- Archives / app builds ---
+*.xcarchive
+*.ipa
+
+# --- Crash / debug symbols ---
+*.dSYM
+*.dSYM.zip
+*.dSYM.tar
+
+# --- Test results ---
+*.xcresult
+
+# --- Playgrounds ---
+timeline.xctimeline
+playground.xcworkspace
+
+# --- Logs ---
+*.log
