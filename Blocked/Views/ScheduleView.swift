@@ -6,16 +6,19 @@
 //
 
 import SwiftUI
-
+import Combine
 struct ScheduleView: View {
     
-    @State private var addSchedule = false
+    @State private var addSchedule: Bool = false
+    
+    @State var scheduleVM = ScheduleVM()
     
     var body: some View {
         
         VStack{
             HStack{
                 Text("Tasks")
+                Text(scheduleVM.jsonString)
                 Spacer()
                 Button("+"){
                     addSchedule.toggle()
@@ -27,7 +30,7 @@ struct ScheduleView: View {
             Spacer()
         }
         .sheet(isPresented: $addSchedule) {
-            Text("Testing")
+            ScheduleCreatorView(scheduleVM: scheduleVM)
         }
         
         
